@@ -10,13 +10,11 @@ function App() {
     <BrowserRouter>
       <Navbar></Navbar>
 
-      <main className='my-5' style={{minHeight: '100vh',}}>
-        <div className='container'>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='*' element={<Navigate to={'/'} />} />
-          </Routes>
-        </div>
+      <main style={{minHeight: '100vh',}}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='*' element={<Navigate to={'/'} />} />
+        </Routes>
       </main>
 
       <Foot></Foot>
